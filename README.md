@@ -139,7 +139,7 @@ Las contribuciones son bienvenidas. Por favor:
 **Sebastián Ceru**
 - Email: softsys95@gmail.com
 - LinkedIn: [linkedin.com/in/cerutti-sebastian](https://www.linkedin.com/in/cerutti-sebastiáng/)
-
+ 
 ---
 
 ⭐ Si te gusta este proyecto, ¡dale una estrella en GitHub!

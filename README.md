@@ -1,4 +1,4 @@
-# Portfolio Personal - Sebastián Ceru
+# Portfolio Personal - Sebastián Cerutti
 
 Un portfolio profesional, moderno y responsive construido con React y TypeScript.
 
@@ -137,9 +137,8 @@ Las contribuciones son bienvenidas. Por favor:
 ## 📞 Contacto
 
 **Sebastián Ceru**
-- Email: sebastian.ceru@email.com
-- LinkedIn: [linkedin.com/in/sebastian-ceru](https://linkedin.com)
-- GitHub: [github.com/sebastian-ceru](https://github.com)
+- Email: softsys95@gmail.com
+- LinkedIn: [linkedin.com/in/cerutti-sebastian](https://www.linkedin.com/in/cerutti-sebastiáng/)
 
 ---
 

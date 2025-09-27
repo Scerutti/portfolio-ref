@@ -1,0 +1,124 @@
+import { FaGraduationCap, FaCertificate } from 'react-icons/fa';
+import { Education } from '../types';
+
+export const educationData: Education[] = [
+    {
+        id: 'degree-1',
+        type: 'degree',
+        title: 'education.degree1',
+        institution: 'education.university',
+        period: 'education.period1',
+        location: 'education.location',
+        description: 'education.desc1',
+        icon: FaGraduationCap,
+    },
+    {
+        id: 'degree-2',
+        type: 'degree',
+        title: 'education.degree2',
+        institution: 'education.university',
+        period: 'education.period2',
+        location: 'education.location',
+        description: 'education.desc2',
+        icon: FaGraduationCap,
+    },
+];
+
+
+
+export const certifications: Education[] = [
+    // EducacionID
+    {
+        id: 'cert-spring-boot',
+        type: 'certification',
+        title: 'certifications.springBoot.title',
+        institution: 'certifications.educacionIT',
+        period: 'certifications.springBoot.issued',
+        location: '',
+        description: 'certifications.springBoot.desc',
+        icon: FaCertificate,
+    },
+    {
+        id: 'cert-java-backend',
+        type: 'certification',
+        title: 'certifications.javaBackend.title',
+        institution: 'certifications.educacionIT',
+        period: 'certifications.javaBackend.issued',
+        location: '',
+        description: 'certifications.javaBackend.desc',
+        icon: FaCertificate,
+    },
+    {
+        id: 'cert-java18',
+        type: 'certification',
+        title: 'certifications.java18.title',
+        institution: 'certifications.educacionIT',
+        period: 'certifications.java18.issued',
+        location: '',
+        description: 'certifications.java18.desc',
+        icon: FaCertificate,
+    },
+    // Educative
+    {
+        id: 'cert-redux',
+        type: 'certification',
+        title: 'certifications.redux.title',
+        institution: 'certifications.educative',
+        period: 'certifications.redux.issued',
+        location: '',
+        description: 'certifications.redux.desc',
+        icon: FaCertificate,
+    },
+    {
+        id: 'cert-app-testing',
+        type: 'certification',
+        title: 'certifications.app-testing.title',
+        institution: 'certifications.educative',
+        period: 'certifications.app-testing.issued',
+        location: '',
+        description: 'certifications.app-testing.desc',
+        icon: FaCertificate,
+    },
+    {
+        id: 'cert-react',
+        type: 'certification',
+        title: 'certifications.react.title',
+        institution: 'certifications.educative',
+        period: 'certifications.react.issued',
+        location: '',
+        description: 'certifications.react.desc',
+        icon: FaCertificate,
+    },
+    //UTN
+    {
+        id: 'cert-testing',
+        type: 'certification',
+        title: 'certifications.testing-master.title',
+        institution: 'certifications.utn',
+        period: 'certifications.testing-master.issued',
+        location: '',
+        description: 'certifications.testing-master.desc',
+        icon: FaCertificate,
+    },
+    {
+        id: 'cert-nodejs',
+        type: 'certification',
+        title: 'certifications.nodejs.title',
+        institution: 'certifications.utn',
+        period: 'certifications.nodejs.issued',
+        location: '',
+        description: 'certifications.nodejs.desc',
+        icon: FaCertificate,
+    },
+    {
+        id: 'cert-angular',
+        type: 'certification',
+        title: 'certifications.angular.title',
+        institution: 'certifications.utn',
+        period: 'certifications.angular.issued',
+        location: '',
+        description: 'certifications.angular.desc',
+        icon: FaCertificate,
+    }
+];
+

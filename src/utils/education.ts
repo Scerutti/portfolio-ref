@@ -27,7 +27,6 @@ export const educationData: Education[] = [
 
 
 export const certifications: Education[] = [
-    // EducacionID
     {
         id: 'cert-spring-boot',
         type: 'certification',
@@ -58,7 +57,6 @@ export const certifications: Education[] = [
         description: 'certifications.java18.desc',
         icon: FaCertificate,
     },
-    // Educative
     {
         id: 'cert-redux',
         type: 'certification',
@@ -89,7 +87,6 @@ export const certifications: Education[] = [
         description: 'certifications.react.desc',
         icon: FaCertificate,
     },
-    //UTN
     {
         id: 'cert-testing',
         type: 'certification',

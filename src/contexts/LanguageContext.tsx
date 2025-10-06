@@ -20,7 +20,6 @@ export const useLanguage = () => {
 
 const translations = {
     en: {
-        // Navigation
         'nav.home': 'Home',
         'nav.about': 'About',
         'nav.education': 'Education',
@@ -28,14 +27,12 @@ const translations = {
         'nav.recommendations': 'Recommendations',
         'nav.contact': 'Contact',
 
-        // Hero Section
         'hero.greeting': 'Hello, I\'m',
         'hero.title': 'Full Stack Developer',
         'hero.subtitle': 'Building scalable and secure applications with modern web technologies',
         'hero.cta': 'Get in Touch',
         'hero.scroll': 'Scroll to explore',
 
-        // About Section
         'about.title': 'About Me',
         'about.description': 'I’m a full-stack developer with 3+ years of experience building production-ready applications. Skilled in TypeScript, React, Next.js, Node.js, NestJS, and Spring Boot. I focus on modular architecture, automated testing (Jest, TDD, Cucumber), and delivering secure, scalable solutions.',
         'about.skills': 'Skills',
@@ -44,7 +41,6 @@ const translations = {
         'about.team': 'Team Projects',
         'about.certs': 'Certifications',
 
-        // Education Section
         'education.title': 'Education & Certifications',
         'education.degree1': 'Systems Analyst',
         'education.degree2': 'Information Systems Engineering (In Progress)',
@@ -55,9 +51,7 @@ const translations = {
         'education.desc1': 'Intermediate degree of the Information Systems Engineering program.',
         'education.desc2': 'Undergraduate degree focused on software development, system architecture, databases, security, and project management.',
 
-        // Certifications
         'education.certifications': 'Certifications',
-        // EducacionIT
         'certifications.educacionIT': 'EducacionIT',
         'certifications.springBoot.title': 'Java Spring Boot',
         'certifications.springBoot.issued': 'Issued: Aug 2025',
@@ -70,7 +64,6 @@ const translations = {
         'certifications.java18.title' : 'Java Standard 18 Web Programming',
         'certifications.java18.issued': "Issued: May 2025",
         'certifications.java18.desc': 'Skills: Java · Tomcat · JPA · MySQL · JSP',
-        // Educative
         'certifications.educative': 'Educative',
         'certifications.redux.title': 'Practical Redux',
         'certifications.redux.issued': 'Issued: Jul 2024',
@@ -83,7 +76,6 @@ const translations = {
         'certifications.react.title': 'React for Front-End Developers',
         'certifications.react.issued': 'Issued: Nov 2022',
         'certifications.react.desc': 'Skills: JavaScript · React.js',
-        // UTN
         'certifications.utn': 'UTN - e-Learning Center FRBA',
         'certifications.testing-master.title': 'Professional Testing Master',
         'certifications.testing-master.issued': 'Issued: Apr 2024',
@@ -98,18 +90,14 @@ const translations = {
         'certifications.angular.desc': 'Skills: AngularJS',
 
 
-
-        // Projects Section
         'projects.title': 'Featured Projects',
         'projects.view': 'View Project',
         'projects.code': 'View Code',
         'projects.tech': 'Technologies',
 
-        // Recommendations Section
         'recommendations.title': 'LinkedIn Recommendations',
         'recommendations.viewAll': 'View All Recommendations',
 
-        // Contact Section
         'contact.title': 'Get In Touch',
         'contact.subtitle': 'Let\'s work together on your next project',
         'contact.name': 'Your Name',
@@ -118,12 +106,10 @@ const translations = {
         'contact.send': 'Send Message',
         'contact.sent': 'Message sent successfully!',
 
-        // Footer
         'footer.rights': 'All rights reserved.',
         'footer.built': 'Built with React & TypeScript'
     },
     es: {
-        // Navigation
         'nav.home': 'Inicio',
         'nav.about': 'Sobre Mí',
         'nav.education': 'Educación',
@@ -131,14 +117,12 @@ const translations = {
         'nav.recommendations': 'Recomendaciones',
         'nav.contact': 'Contacto',
 
-        // Hero Section
         'hero.greeting': 'Hola, soy',
         'hero.title': 'Desarrollador Full Stack',
         'hero.subtitle': 'Creando aplicaciones seguras y escalables con tecnologías web modernas',
         'hero.cta': 'Contactar',
         'hero.scroll': 'Desplázate para explorar',
 
-        // About Section
         'about.title': 'Sobre Mí',
         'about.description': 'Soy un desarrollador full-stack con más de 3 años de experiencia construyendo aplicaciones en producción. Manejo TypeScript, React, Next.js, Node.js, NestJS y Spring Boot. Me especializo en arquitectura modular, testing automatizado (Jest, TDD, Cucumber) y en entregar soluciones seguras y escalables.',
         'about.skills': 'Habilidades',
@@ -147,7 +131,6 @@ const translations = {
         'about.team': 'Proyectos en Equipo',
         'about.certs': 'Certificaciones',
 
-        // Education Section
         'education.title': 'Educación y Certificaciones',
         'education.degree1': 'Analista de Sistemas',
         'education.degree2': 'Ingeniería en Sistemas de Información (En curso)',
@@ -158,9 +141,7 @@ const translations = {
         'education.desc1': 'Título intermedio de la carrera de Ingeniería en Sistemas de Información.',
         'education.desc2': 'Carrera de grado orientada al desarrollo de software, arquitectura de sistemas, bases de datos, seguridad y gestión de proyectos.',
 
-        // Certifications
         'education.certifications': 'Certificaciones',
-        //EducacionIT
         'certifications.educacionIT': 'EducacionIT',
         'certifications.springBoot.title': 'Java Spring Boot',
         'certifications.springBoot.issued': 'Expedición: ago. 2025',
@@ -173,7 +154,6 @@ const translations = {
         'certifications.java18.title' : 'Java Standard 18 Web Programming',
         'certifications.java18.issued': "Expedición: may. 2025",
         'certifications.java18.desc': 'Aptitudes: Java · Tomcat · JPA · MySQL · JSP',
-        // Educative
         'certifications.educative': 'Educative',
         'certifications.redux.title': 'Practical Redux',
         'certifications.redux.issued': 'Expedición: jul. 2024',
@@ -186,7 +166,6 @@ const translations = {
         'certifications.react.title': 'React for Front-End Developers',
         'certifications.react.issued': 'Expedición: nov. 2022',
         'certifications.react.desc': 'Aptitudes: JavaScript · React.js',
-        //UTN
         'certifications.utn': 'UTN - Centro de e-Learning FRBA',
         'certifications.testing-master.title': 'Professional Testing Master',
         'certifications.testing-master.issued': 'Expedición abr. 2024',
@@ -200,17 +179,14 @@ const translations = {
         'certifications.angular.issued': 'Expedición ago. 2023',
         'certifications.angular.desc': 'Aptitudes: AngularJS',
 
-        // Projects Section
         'projects.title': 'Proyectos Destacados',
         'projects.view': 'Ver Proyecto',
         'projects.code': 'Ver Código',
         'projects.tech': 'Tecnologías',
 
-        // Recommendations Section
         'recommendations.title': 'Recomendaciones de LinkedIn',
         'recommendations.viewAll': 'Ver Todas las Recomendaciones',
 
-        // Contact Section
         'contact.title': 'Ponte en Contacto',
         'contact.subtitle': 'Trabajemos juntos en tu próximo proyecto',
         'contact.name': 'Tu Nombre',
@@ -219,7 +195,6 @@ const translations = {
         'contact.send': 'Enviar Mensaje',
         'contact.sent': '¡Mensaje enviado exitosamente!',
 
-        // Footer
         'footer.rights': 'Todos los derechos reservados.',
         'footer.built': 'Desarrollado con React & TypeScript'
     }

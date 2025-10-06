@@ -4,6 +4,8 @@ import { FaChevronDown } from 'react-icons/fa';
 import { useLanguage } from '../contexts/LanguageContext';
 import { socialLinks } from '../utils/social';
 
+const DEVELOPER_NAME = 'Sebastián Cerutti';
+
 const Hero: React.FC = () => {
   const { t } = useLanguage();
 
@@ -72,7 +74,7 @@ const Hero: React.FC = () => {
                     <div className="p-[3px] rounded-full bg-gradient-to-tr from-blue-200 via-purple-200 to-pink-200 dark:from-slate-700 dark:via-slate-600 dark:to-slate-700 shadow-md">
                         <img
                             src="https://res.cloudinary.com/dhvbp84vj/image/upload/v1758067247/1_rnrtcj.png"
-                            alt="Sebastián Cerutti"
+                            alt={DEVELOPER_NAME}
                             loading="lazy"
                             className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover bg-gray-200 dark:bg-slate-700 ring-2 ring-white dark:ring-slate-900"
                         />
@@ -94,11 +96,11 @@ const Hero: React.FC = () => {
                     className="text-5xl md:text-7xl font-bold"
                 >
               <span className="text-gradient">
-                Sebastián Cerutti
+                {DEVELOPER_NAME}
               </span>
                 </motion.h1>
             </div>
-            {/*<motion.h1*/}
+            {/* <motion.h1*/}
           {/*  initial={{ opacity: 0, y: 20 }}*/}
           {/*  animate={{ opacity: 1, y: 0 }}*/}
           {/*  transition={{ duration: 0.6, delay: 0.4 }}*/}
@@ -107,7 +109,7 @@ const Hero: React.FC = () => {
           {/*  <span className="text-gradient">*/}
           {/*    Sebastián Cerutti*/}
           {/*  </span>*/}
-          {/*</motion.h1>*/}
+          {/*</motion.h1> */}
 
           {/* Subtitle */}
           <motion.p

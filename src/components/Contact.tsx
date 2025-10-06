@@ -45,8 +45,12 @@ const Contact: React.FC = () => {
                 }, 3000);
             })
             .catch(error => {
-                console.error("Error al enviar el mensaje:", error);
-                alert("Error al enviar el mensaje.");
+                console.error("Contact form submission failed:", {
+                    error: error.message,
+                    status: error.response?.status,
+                    data: error.response?.data,
+                    timestamp: new Date().toISOString()
+                });
             });
     };
 
@@ -78,7 +82,7 @@ const Contact: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <h3 className="text-2xl font-semibold mb-8 text-gray-800 dark:text-gray-200">
-                Get in Touch
+                {t('contact.getInTouch')}
               </h3>
               
               <div className="space-y-6 mb-8">
@@ -95,7 +99,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-800 dark:text-gray-200">
-                        {info.title}
+                        {t(info.title)}
                       </h4>
                       {info.link ? (
                         <a
@@ -122,12 +126,10 @@ const Contact: React.FC = () => {
                 className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-6 rounded-lg border border-blue-200 dark:border-blue-800"
               >
                 <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-3">
-                  Let's Work Together
+                  {t('contact.letsWorkTogether')}
                 </h4>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                  I'm always interested in new opportunities and exciting projects. 
-                  Whether you have a question, want to collaborate, or just want to say hi, 
-                  feel free to reach out!
+                  {t('contact.opportunitiesText')}
                 </p>
               </motion.div>
             </motion.div>
@@ -173,7 +175,7 @@ const Contact: React.FC = () => {
                         onChange={handleInputChange}
                         required
                         className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-slate-700 text-gray-900 dark:text-gray-100 transition-colors duration-200"
-                        placeholder="Your full name"
+                        placeholder={t('contact.namePlaceholder')}
                       />
                     </div>
 
@@ -189,7 +191,7 @@ const Contact: React.FC = () => {
                         onChange={handleInputChange}
                         required
                         className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-slate-700 text-gray-900 dark:text-gray-100 transition-colors duration-200"
-                        placeholder="your.email@example.com"
+                        placeholder={t('contact.emailPlaceholder')}
                       />
                     </div>
 
@@ -205,7 +207,7 @@ const Contact: React.FC = () => {
                         required
                         rows={6}
                         className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-slate-700 text-gray-900 dark:text-gray-100 transition-colors duration-200 resize-none"
-                        placeholder="Tell me about your project or just say hello!"
+                        placeholder={t('contact.messagePlaceholder')}
                       />
                     </div>
 

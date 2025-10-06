@@ -12,7 +12,7 @@ export const contactInfo: ContactInfo[] = [
   {
     id: 'location',
     icon: FaMapMarkerAlt,
-    title: 'Location',
+    title: 'contact.location',
     value: 'Entre Ríos, Argentina',
     link: null,
   },

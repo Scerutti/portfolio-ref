@@ -127,10 +127,10 @@ const Education: React.FC = () => {
                 className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg border border-blue-200 dark:border-blue-800"
               >
                 <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-3">
-                  Continuous Learning
+                  {t('education.continuousLearning')}
                 </h4>
                 <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
-                  Always staying updated with the latest technologies and best practices in software development.
+                  {t('education.continuousLearningDesc')}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {['Java', 'Spring Boot', 'TypeScript', 'Docker', 'Kubernetes'].map((tech, index) => (

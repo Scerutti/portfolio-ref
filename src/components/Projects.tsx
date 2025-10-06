@@ -92,7 +92,7 @@ const Projects: React.FC = () => {
                                         {project.title}
                                     </h3>
                                     <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                        {project.description}
+                                        {t(project.description)}
                                     </p>
 
                                     {/* Technologies */}
@@ -168,7 +168,7 @@ const Projects: React.FC = () => {
                                             {project.title}
                                         </h3>
                                         <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">
-                                            {project.description}
+                                            {t(project.description)}
                                         </p>
                                         <div className="flex flex-wrap gap-1 mb-3">
                                             {project.technologies.slice(0, 3).map((tech, techIndex) => (

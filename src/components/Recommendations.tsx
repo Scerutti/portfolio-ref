@@ -98,10 +98,10 @@ const Recommendations: React.FC = () => {
             <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-8 rounded-lg border border-blue-200 dark:border-blue-800">
               <FaLinkedin className="text-blue-600 text-4xl mx-auto mb-4" />
               <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
-                Connect with me on LinkedIn
+                {t('recommendations.connectLinkedIn')}
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
-                View all my recommendations and connect with me to discuss potential opportunities or collaborations.
+                {t('recommendations.connectDescription')}
               </p>
               <motion.a
                 href="https://www.linkedin.com/in/cerutti-sebastiáng/details/recommendations"

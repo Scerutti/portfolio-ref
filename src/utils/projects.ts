@@ -4,7 +4,7 @@ export const projects: Project[] = [
     {
         id: 'project-1',
         title: 'Notifications',
-        description: 'API para envío de notificaciones (mail + telegram).',
+        description: 'projects.notifications.description',
         image: 'https://res.cloudinary.com/dhvbp84vj/image/upload/v1758912681/notification_api_wp8n6n.png',
         technologies: ['Docker', 'Docker Compose', 'MongoDB', 'NestJS', 'TypeScript', 'Mongoose', 'Nodemailer', 'Swagger', 'Redis'],
         githubUrl: 'https://github.com/Scerutti/notifications',
@@ -14,7 +14,7 @@ export const projects: Project[] = [
     {
         id: 'project-2',
         title: 'Portfolio',
-        description: 'Portfolio personal desarrollado con React y TypeScript, incluyendo animaciones fluidas, modo oscuro, internacionalización y diseño responsive.',
+        description: 'projects.portfolio.description',
         image: 'https://res.cloudinary.com/dhvbp84vj/image/upload/v1758912681/portfolio_home_huxiel.png',
         technologies: ['React', 'TypeScript', 'Vite', 'TailwindCSS', 'Framer Motion', 'React Icons', 'Axios', 'ESLint'],
         githubUrl: 'https://github.com/Scerutti/portfolio-ref',
@@ -24,7 +24,7 @@ export const projects: Project[] = [
     {
         id: 'project-3',
         title: 'Funciones Básicas',
-        description: 'Paquete de utilidades con funciones comunes para parseo, fechas, strings, arrays y hooks de React.',
+        description: 'projects.funciones.description',
         image: 'https://res.cloudinary.com/dhvbp84vj/image/upload/v1758912681/funciones_basicas_e2ycav.png',
         technologies: ['TypeScript', 'React', 'NPM'],
         githubUrl: '',
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     {
         id: 'project-4',
         title: 'Baires Hospedajes',
-        description: 'Aplicación de hospedajes con frontend en Next.js y Tailwind, backend con Nest y MongoDB, login con Firebase y mapas con Leaflet.',
+        description: 'projects.baires.description',
         image: 'https://res.cloudinary.com/dhvbp84vj/image/upload/v1758912681/baires_home_lulkf4.png',
         technologies: ['React', 'Next.js', 'TailwindCSS', 'NestJS', 'TypeScript', 'MongoDB', 'Leaflet', 'Firebase'],
         githubUrl: '',
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     {
         id: 'project-5',
         title: 'CRUD Personas - Servlets & JSP',
-        description: 'Aplicación CRUD completa de personas desarrollada con Java, Servlets y JSP. Incluye separación en capas, logger centralizado y conexión a MySQL.',
+        description: 'projects.crud.description',
         image: 'https://res.cloudinary.com/dhvbp84vj/image/upload/v1758912681/portfolio_home_huxiel.png',
         technologies: ['Java', 'Servlets', 'JSP', 'Tomcat', 'MySQL', 'Logger'],
         githubUrl: 'https://github.com/Scerutti/servlet-java',
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     {
         id: 'project-6',
         title: 'Geolocalización & Mapa Interactivo',
-        description: 'Aplicación de geolocalización en tiempo real usando Leaflet. Diseñada para tracking de vehículos con mapas interactivos.',
+        description: 'projects.geolocation.description',
         image: 'https://res.cloudinary.com/dhvbp84vj/image/upload/v1758912681/portfolio_home_huxiel.png',
         technologies: ['React', 'TypeScript', 'Leaflet', 'React-Leaflet', 'Vite', 'Geolocation API'],
         githubUrl: 'https://github.com/Scerutti/geolocalizacion_nativajs_y_mapa_interactivo',
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     {
         id: 'project-7',
         title: 'Taller Invitation Form',
-        description: 'Formulario de invitación para taller con validación, integración a WhatsApp y envío de emails. Desarrollado con Material-UI.',
+        description: 'projects.taller.description',
         image: 'https://res.cloudinary.com/dhvbp84vj/image/upload/v1758912681/portfolio_home_huxiel.png',
         technologies: ['React', 'TypeScript', 'Material-UI', 'CSS', 'WhatsApp API'],
         githubUrl: 'https://github.com/Scerutti/taller-invitation-form',
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     {
         id: 'project-8',
         title: 'Chuck Norris Jokes',
-        description: 'Aplicación que consume la API de Chuck Norris para mostrar chistes aleatorios. Uno de mis primeros proyectos con React y TypeScript.',
+        description: 'projects.chuck.description',
         image: 'https://res.cloudinary.com/dhvbp84vj/image/upload/v1758912681/portfolio_home_huxiel.png',
         technologies: ['React', 'TypeScript', 'Material-UI', 'SweetAlert2', 'Vite', 'API Integration'],
         githubUrl: 'https://github.com/Scerutti/chuck-norris-jokes',

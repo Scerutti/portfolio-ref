@@ -4,6 +4,8 @@ import { FaHeart } from 'react-icons/fa';
 import { useLanguage } from '../contexts/LanguageContext';
 import { socialLinks } from '../utils/social';
 
+const DEVELOPER_NAME = 'Sebastián Cerutti';
+
 const Footer: React.FC = () => {
   const { t } = useLanguage();
 
@@ -24,10 +26,10 @@ const Footer: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4"
               >
-                Sebastián Cerutti
+                {DEVELOPER_NAME}
               </motion.h3>
               <p className="text-gray-400 mb-4">
-                Full Stack Developer passionate about creating innovative digital solutions.
+                {t('footer.description')}
               </p>
               <div className="flex space-x-4">
                 {socialLinks.map((social) => (
@@ -49,7 +51,7 @@ const Footer: React.FC = () => {
 
             {/* Quick Links */}
             <div>
-              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+              <h4 className="text-lg font-semibold mb-4">{t('footer.quickLinks')}</h4>
               <ul className="space-y-2">
                 {[
                   { key: 'nav.about', href: '#about' },
@@ -71,7 +73,7 @@ const Footer: React.FC = () => {
 
             {/* Contact Info */}
             <div>
-              <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
+              <h4 className="text-lg font-semibold mb-4">{t('footer.contactInfo')}</h4>
               <div className="space-y-2 text-gray-400">
                 <p>softsys95@gmail.com</p>
                 <p>Entre Ríos, Argentina</p>
@@ -84,7 +86,7 @@ const Footer: React.FC = () => {
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               {/* Copyright */}
               <div className="flex items-center space-x-2 text-gray-400">
-                <span>© 2024 Sebastián Cerutti.</span>
+                <span>© 2024 {DEVELOPER_NAME}.</span>
                 <span>{t('footer.rights')}</span>
               </div>
 
@@ -101,7 +103,7 @@ const Footer: React.FC = () => {
                 whileTap={{ scale: 0.9 }}
                 className="px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors duration-200 text-gray-400 hover:text-white"
               >
-                Back to Top
+                {t('footer.backToTop')}
               </motion.button>
             </div>
           </div>

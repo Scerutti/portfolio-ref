@@ -22,7 +22,6 @@ const About: React.FC = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          {/* Section Title */}
           <div className="text-center mb-16">
             <h2 className="section-title">
               {t('about.title')}
@@ -30,7 +29,6 @@ const About: React.FC = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Column - Description */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -43,7 +41,6 @@ const About: React.FC = () => {
                 {t('about.description')}
               </p>
 
-              {/* Stats */}
               <div className="grid grid-cols-2 gap-6">
                 {stats.map((stat, index) => (
                   <motion.div
@@ -65,7 +62,6 @@ const About: React.FC = () => {
               </div>
             </motion.div>
 
-            {/* Right Column - Skills */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}

@@ -64,7 +64,6 @@ const Contact: React.FC = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          {/* Section Title */}
           <div className="text-center mb-16">
             <h2 className="section-title">
               {t('contact.title')}
@@ -75,7 +74,6 @@ const Contact: React.FC = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Information */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -118,7 +116,6 @@ const Contact: React.FC = () => {
                 ))}
               </div>
 
-              {/* Additional Info */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -134,7 +131,6 @@ const Contact: React.FC = () => {
               </motion.div>
             </motion.div>
 
-            {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}

@@ -41,7 +41,6 @@ const Header: React.FC = () => {
     >
       <nav className="container mx-auto px-4 py-4 w-full">
         <div className="flex items-center justify-between w-full">
-          {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
@@ -49,7 +48,6 @@ const Header: React.FC = () => {
             Portfolio
           </motion.div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <motion.a
@@ -64,9 +62,7 @@ const Header: React.FC = () => {
             ))}
           </div>
 
-          {/* Controls */}
           <div className="flex items-center space-x-4">
-            {/* Language Toggle */}
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -77,7 +73,6 @@ const Header: React.FC = () => {
               <FaGlobe className="text-gray-600 dark:text-gray-400" />
             </motion.button>
 
-            {/* Theme Toggle */}
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -92,7 +87,6 @@ const Header: React.FC = () => {
               )}
             </motion.button>
 
-            {/* Mobile Menu Button */}
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -109,7 +103,6 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         <motion.div
           initial={false}
           animate={{

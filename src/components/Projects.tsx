@@ -22,14 +22,12 @@ const Projects: React.FC = () => {
                     animate={inView ? {opacity: 1, y: 0} : {}}
                     transition={{duration: 0.8}}
                 >
-                    {/* Section Title */}
                     <div className="text-center mb-16">
                         <h2 className="section-title">
                             {t('projects.title')}
                         </h2>
                     </div>
 
-                    {/* Featured Projects */}
                     <div className="grid lg:grid-cols-2 gap-8 mb-12">
                         {projects.filter(project => project.featured).map((project, index) => (
                             <motion.div
@@ -39,7 +37,6 @@ const Projects: React.FC = () => {
                                 transition={{duration: 0.8, delay: 0.2 + index * 0.2}}
                                 className="bg-white dark:bg-slate-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
                             >
-                                {/* Project Image */}
                                 <div className="relative overflow-hidden">
                                     {project.image ?
                                         <img
@@ -86,7 +83,6 @@ const Projects: React.FC = () => {
                                     </div>
                                 </div>
 
-                                {/* Project Content */}
                                 <div className="p-6">
                                     <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">
                                         {project.title}
@@ -95,7 +91,6 @@ const Projects: React.FC = () => {
                                         {t(project.description)}
                                     </p>
 
-                                    {/* Technologies */}
                                     <div className="mb-4">
                                         <p className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                                             {t('projects.tech')}:
@@ -112,7 +107,6 @@ const Projects: React.FC = () => {
                                         </div>
                                     </div>
 
-                                    {/* Action Buttons */}
                                     <div className="flex space-x-4">
                                         {
                                             project.githubUrl !== "" &&
@@ -148,7 +142,6 @@ const Projects: React.FC = () => {
                         ))}
                     </div>
 
-                    {/* Other Projects */}
                     <div className="grid md:grid-cols-2 gap-6">
                         {projects.filter(project => !project.featured).map((project, index) => (
                             <motion.div

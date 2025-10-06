@@ -18,9 +18,7 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-900 dark:bg-slate-950 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Main Footer Content */}
           <div className="grid md:grid-cols-3 gap-8 mb-8">
-            {/* Brand */}
             <div>
               <motion.h3
                 whileHover={{ scale: 1.05 }}
@@ -49,7 +47,6 @@ const Footer: React.FC = () => {
               </div>
             </div>
 
-            {/* Quick Links */}
             <div>
               <h4 className="text-lg font-semibold mb-4">{t('footer.quickLinks')}</h4>
               <ul className="space-y-2">
@@ -71,7 +68,6 @@ const Footer: React.FC = () => {
               </ul>
             </div>
 
-            {/* Contact Info */}
             <div>
               <h4 className="text-lg font-semibold mb-4">{t('footer.contactInfo')}</h4>
               <div className="space-y-2 text-gray-400">
@@ -81,22 +77,18 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Divider */}
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              {/* Copyright */}
               <div className="flex items-center space-x-2 text-gray-400">
                 <span>© 2024 {DEVELOPER_NAME}.</span>
                 <span>{t('footer.rights')}</span>
               </div>
 
-              {/* Built with */}
               <div className="flex items-center space-x-2 text-gray-400">
                 <span>{t('footer.built')}</span>
                 <FaHeart className="text-red-500" />
               </div>
 
-              {/* Back to Top */}
               <motion.button
                 onClick={scrollToTop}
                 whileHover={{ scale: 1.1 }}

@@ -22,7 +22,6 @@ const Education: React.FC = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          {/* Section Title */}
           <div className="text-center mb-16">
             <h2 className="section-title">
               {t('education.title')}
@@ -30,7 +29,6 @@ const Education: React.FC = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* Education */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -81,7 +79,6 @@ const Education: React.FC = () => {
               </div>
             </motion.div>
 
-            {/* Certifications */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -119,7 +116,6 @@ const Education: React.FC = () => {
                 ))}
               </div>
 
-              {/* Additional Learning */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}

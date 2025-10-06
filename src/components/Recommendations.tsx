@@ -22,14 +22,12 @@ const Recommendations: React.FC = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          {/* Section Title */}
           <div className="text-center mb-16">
             <h2 className="section-title">
               {t('recommendations.title')}
             </h2>
           </div>
 
-          {/* Recommendations Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {recommendations.map((rec, index) => (
               <motion.div
@@ -39,17 +37,14 @@ const Recommendations: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.2 + index * 0.2 }}
                 className="bg-gray-50 dark:bg-slate-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 relative"
               >
-                {/* Quote Icon */}
                 <div className="absolute top-4 right-4 text-blue-200 dark:text-blue-400">
                   <FaQuoteLeft className="text-2xl" />
                 </div>
 
-                {/* Recommendation Text */}
                 <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
                   "{rec.text}"
                 </p>
 
-                {/* Author Info */}
                 <div className="flex items-center space-x-4">
                     {rec.image ? (
                         <img
@@ -78,7 +73,6 @@ const Recommendations: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Date */}
                 <div className="mt-4 text-right">
                   <span className="text-xs text-gray-500 dark:text-gray-500">
                     {rec.date}
@@ -88,7 +82,6 @@ const Recommendations: React.FC = () => {
             ))}
           </div>
 
-          {/* LinkedIn CTA */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}

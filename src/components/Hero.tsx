@@ -17,7 +17,6 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 pt-20">
       
-      {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
           animate={{
@@ -52,7 +51,6 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
-          {/* Greeting */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -62,7 +60,6 @@ const Hero: React.FC = () => {
             {t('hero.greeting')}
           </motion.p>
 
-          {/* Main Title */}
             <div className="flex flex-col items-center md:flex-row md:items-end md:justify-center gap-6 md:gap-8 mb-6">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9, y: 10 }}
@@ -70,7 +67,6 @@ const Hero: React.FC = () => {
                     transition={{ duration: 0.6, delay: 0.35 }}
                     className="relative"
                 >
-                    {/* Contenedor del avatar */}
                     <div className="p-[3px] rounded-full bg-gradient-to-tr from-blue-200 via-purple-200 to-pink-200 dark:from-slate-700 dark:via-slate-600 dark:to-slate-700 shadow-md">
                         <img
                             src="https://res.cloudinary.com/dhvbp84vj/image/upload/v1758067247/1_rnrtcj.png"
@@ -79,7 +75,6 @@ const Hero: React.FC = () => {
                             className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover bg-gray-200 dark:bg-slate-700 ring-2 ring-white dark:ring-slate-900"
                         />
                     </div>
-                    {/* Halo suave */}
                     <motion.span
                         aria-hidden="true"
                         className="pointer-events-none absolute inset-0 rounded-full blur-lg"
@@ -100,18 +95,6 @@ const Hero: React.FC = () => {
               </span>
                 </motion.h1>
             </div>
-            {/* <motion.h1*/}
-          {/*  initial={{ opacity: 0, y: 20 }}*/}
-          {/*  animate={{ opacity: 1, y: 0 }}*/}
-          {/*  transition={{ duration: 0.6, delay: 0.4 }}*/}
-          {/*  className="text-5xl md:text-7xl font-bold mb-6"*/}
-          {/*>*/}
-          {/*  <span className="text-gradient">*/}
-          {/*    Sebastián Cerutti*/}
-          {/*  </span>*/}
-          {/*</motion.h1> */}
-
-          {/* Subtitle */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -121,7 +104,6 @@ const Hero: React.FC = () => {
             {t('hero.subtitle')}
           </motion.p>
 
-          {/* CTA Button */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -138,7 +120,6 @@ const Hero: React.FC = () => {
             </motion.a>
           </motion.div>
 
-          {/* Social Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -161,7 +142,6 @@ const Hero: React.FC = () => {
             ))}
           </motion.div>
 
-          {/* Scroll Indicator */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

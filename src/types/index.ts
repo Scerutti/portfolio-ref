@@ -6,7 +6,7 @@ export interface Skill {
 
 export interface Stat {
   id: string;
-  icon: any; // React icon component
+  icon: any;
   value: string;
   label: string;
 }
@@ -19,7 +19,7 @@ export interface Education {
   period: string;
   location: string;
   description: string;
-  icon: any; // React icon component
+  icon: any;
 }
 
 export interface Project {
@@ -45,7 +45,7 @@ export interface Recommendation {
 
 export interface ContactInfo {
   id: string;
-  icon: any; // React icon component
+  icon: any;
   title: string;
   value: string;
   link: string | null;
@@ -53,7 +53,7 @@ export interface ContactInfo {
 
 export interface SocialLink {
   id: string;
-  icon: any; // React icon component
+  icon: any;
   href: string;
   label: string;
 }

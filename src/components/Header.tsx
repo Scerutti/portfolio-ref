@@ -55,7 +55,7 @@ const Header: React.FC = () => {
                 href={item.href}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium focus-ring"
               >
                 {t(item.key)}
               </motion.a>
@@ -67,7 +67,7 @@ const Header: React.FC = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={toggleLanguage}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200 focus-ring"
               aria-label="Toggle language"
             >
               <FaGlobe className="text-gray-600 dark:text-gray-400" />
@@ -77,7 +77,7 @@ const Header: React.FC = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={toggleTheme}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200 focus-ring"
               aria-label="Toggle theme"
             >
               {theme === 'light' ? (
@@ -91,8 +91,10 @@ const Header: React.FC = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+              className="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200 focus-ring"
               aria-label="Toggle mobile menu"
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
             >
               {isMobileMenuOpen ? (
                 <FaTimes className="text-gray-600 dark:text-gray-400" />
@@ -104,6 +106,7 @@ const Header: React.FC = () => {
         </div>
 
         <motion.div
+          id="mobile-menu"
           initial={false}
           animate={{
             height: isMobileMenuOpen ? 'auto' : 0,
@@ -111,6 +114,7 @@ const Header: React.FC = () => {
           }}
           transition={{ duration: 0.3 }}
           className="md:hidden overflow-hidden"
+          aria-hidden={!isMobileMenuOpen}
         >
           <div className="py-4 space-y-2">
             {navItems.map((item) => (

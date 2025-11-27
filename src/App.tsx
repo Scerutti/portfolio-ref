@@ -15,8 +15,11 @@ const App: React.FC = () => {
     <ThemeProvider>
       <LanguageProvider>
         <div className="min-h-screen bg-white dark:bg-slate-900 transition-colors duration-300">
+          <a href="#main-content" className="skip-link">
+            Saltar al contenido principal
+          </a>
           <Header />
-          <main>
+          <main id="main-content">
             <Hero />
             <About />
             <Education />

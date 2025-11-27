@@ -69,9 +69,12 @@ const Hero: React.FC = () => {
                 >
                     <div className="p-[3px] rounded-full bg-gradient-to-tr from-blue-200 via-purple-200 to-pink-200 dark:from-slate-700 dark:via-slate-600 dark:to-slate-700 shadow-md">
                         <img
-                            src="https://res.cloudinary.com/dhvbp84vj/image/upload/v1758067247/1_rnrtcj.png"
-                            alt={DEVELOPER_NAME}
-                            loading="lazy"
+                            src="https://res.cloudinary.com/dhvbp84vj/image/upload/f_auto,q_auto,w_112,h_112,c_fill/v1758067247/1_rnrtcj.png"
+                            alt={`Foto de perfil de ${DEVELOPER_NAME}, Full Stack Developer`}
+                            loading="eager"
+                            fetchPriority="high"
+                            width="112"
+                            height="112"
                             className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover bg-gray-200 dark:bg-slate-700 ring-2 ring-white dark:ring-slate-900"
                         />
                     </div>
@@ -114,7 +117,7 @@ const Hero: React.FC = () => {
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn btn-primary px-8 py-4 rounded-full shadow-lg hover:shadow-xl"
+              className="btn btn-primary px-8 py-4 rounded-full shadow-lg hover:shadow-xl focus-ring"
             >
               {t('hero.cta')}
             </motion.a>
@@ -155,7 +158,8 @@ const Hero: React.FC = () => {
               onClick={scrollToNext}
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="p-2 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 transition-colors duration-300"
+              className="p-2 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 transition-colors duration-300 focus-ring"
+              aria-label={t('hero.scroll')}
             >
               <FaChevronDown className="text-gray-500 dark:text-gray-400" />
             </motion.button>
